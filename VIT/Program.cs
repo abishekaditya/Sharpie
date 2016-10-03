@@ -22,12 +22,12 @@ namespace VIT
                 var dataRequest = new RestRequest("/refresh",Method.POST);
                 dataRequest.AddParameter("regno", "14BIT0137");
                 dataRequest.AddParameter("dob", "17021997");
-                dataRequest.AddParameter("mobile", "9999500285");
+                dataRequest.AddParameter("mobile", args[0]);
 
                 var dataResult = client.Execute(dataRequest).Content;
 
                 dynamic data = JsonConvert.DeserializeObject(dataResult);
-                Console.WriteLine(data.courses[0]);
+                Console.WriteLine(data);
             }
             else
             {

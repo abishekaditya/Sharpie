@@ -25,8 +25,6 @@ namespace HelloWorld
             else
             {
                 Console.WriteLine("Incorrect parameters");
-            }
-            Console.ReadKey();
-        }
+            }        }
     }
 }
