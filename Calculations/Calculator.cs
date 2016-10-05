@@ -6,12 +6,7 @@ namespace Calculations
     {
         public int Factorial(int i)
         {
-            var ans = 1;
-            foreach (var x in Enumerable.Range(1,i))
-            {
-                ans *= x;
-            }
-            return ans;
+            return Enumerable.Range(1, i).Aggregate((current, x) => current*x);
         }
     }
 }
