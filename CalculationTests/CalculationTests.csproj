@@ -3,12 +3,12 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{605B9065-0E5B-45E2-BA1A-F4B076D1613E}</ProjectGuid>
+    <ProjectGuid>{D744EE9E-3FC5-495C-81C4-C73ADD4A0B74}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>UnitTestProject1</RootNamespace>
-    <AssemblyName>UnitTestProject1</AssemblyName>
-    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <RootNamespace>CalculationTests</RootNamespace>
+    <AssemblyName>CalculationTests</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -55,7 +55,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Calculations\Calculations.csproj">
-      <Project>{b148b84e-e2a2-4c57-98ba-b2dd10df4d7f}</Project>
+      <Project>{B148B84E-E2A2-4C57-98BA-B2DD10DF4D7F}</Project>
       <Name>Calculations</Name>
     </ProjectReference>
   </ItemGroup>
