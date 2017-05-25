@@ -2,25 +2,26 @@
 
 namespace HelloWorld
 {
-    class Program
+    internal static class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             var len = args.Length;
             Console.BackgroundColor = ConsoleColor.Cyan;
             Console.ForegroundColor = ConsoleColor.Red;
 
-            if (len == 0 )
+            switch (len)
             {
-                Console.WriteLine("Hello World");
+                case 0:
+                    Console.WriteLine("Hello World");
+                    break;
+                case 1:
+                    Console.WriteLine($"Hello {args[0]}");
+                    break;
+                default:
+                    Console.WriteLine("Incorrect parameters");
+                    break;
             }
-            else if (len == 1)
-            {
-                Console.WriteLine("Hello {0}", args[0]);
-            }
-            else
-            {
-                Console.WriteLine("Incorrect parameters");
-            }        }
+        }
     }
 }

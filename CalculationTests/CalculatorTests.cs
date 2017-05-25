@@ -1,23 +1,17 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Calculations;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Calculations.Tests
 {
     [TestClass()]
     public class CalculatorTests
     {
+        private readonly Calculator _calc = new Calculator();
 
         [TestMethod()]
         public void FactorialTest()
         {
-            var calc = new Calculator();
             const int x = 5;
-            var factorial = calc.Factorial(x);
+            var factorial = _calc.Factorial(x);
             const int expected = 120;
             Assert.AreEqual(expected, factorial);
         }
@@ -25,9 +19,8 @@ namespace Calculations.Tests
         [TestMethod()]
         public void FibonacciTest()
         {
-            var calc = new Calculator();
             const int x = 10;
-            var fibonacci = calc.Fibonacci(x);
+            var fibonacci = _calc.Fibonacci(x);
             const int expected = 55;
             Assert.AreEqual(expected,fibonacci);
         }

@@ -12,10 +12,9 @@ namespace Calculations
         public int Fibonacci(int num)
         {
             int a = 0, b = 1;
-            int x = 0;
             for (var i = 0; i < num; i += 1)
             {
-                x = a + b;
+                var x = a + b;
                 a = b;
                 b = x;
             }
